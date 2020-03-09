@@ -4,8 +4,8 @@ class Environment(object):
     def __init__(self):
         self.locationCondition = {'A': '0', 'B': '0'}
 
-        self.locationCondition['A'] = random.randint(0, 1)
-        self.locationCondition['B'] = random.randint(0, 1)
+        self.locationCondition['A'] = int(input("enter 0 clean and 1 dirty"))
+        self.locationCondition['B'] = int(input("enter 0 clean and 1 dirty"))
 class SimpleReflexVacuumAgent(Environment):
     def __init__(self, Environment):
         print(Environment.locationCondition)
